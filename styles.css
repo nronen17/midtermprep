@@ -81,3 +81,6 @@ form {
 .currentpage {
   font-weight: bold;
 }
+#errorMessages{
+  color:red;
+  }
