@@ -2,11 +2,13 @@ body {
   background-image: url("image.jpg");
   margin: 0px;
   min-height: 100vh;
+  font-family: "Times New Roman", Times, serif;
 }
 .navlist {
   list-style: none;
   display: flex;
   justify-content: center;
+  padding: 0px;
 }
 .navitem {
   display: inline-block;
@@ -23,6 +25,9 @@ body {
   display: flex;
   background-color: aliceblue;
   padding: 8px;
+}
+.title {
+  margin: 2px !important;
 }
 #content {
   overflow: auto;
@@ -78,9 +83,37 @@ form {
 .field label {
   display: block;
 }
+.text-center {
+  text-align: center;
+}
 .currentpage {
   font-weight: bold;
 }
-#errorMessages{
-  color:red;
-  }
+#errorMessages {
+  color: red;
+}
+
+.article {
+  background-color: aliceblue;
+  padding: 12px;
+  margin: 1%;
+}
+
+.picture-small {
+  width: 400px;
+}
+.picture,
+.picture-small {
+  border: 3px;
+  border-style: groove;
+  border-color: rgb(100, 155, 204);
+}
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#feature {
+  padding: 12px;
+}

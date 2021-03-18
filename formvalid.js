@@ -20,7 +20,7 @@ function validateForm(){
     var phone = document.getElementById("Phone").value;
     var Address = document.getElementById("Address").value;
     var country = document.getElementById("Country").value;
-    var password1 = document.getElementById("password1").value;
+    var password = document.getElementById("password").value;
     var password2 = document.getElementById("password2").value;
     var username = document.getElementById("username").value;
     var city = document.getElementById("city").value;
@@ -54,23 +54,23 @@ function validateForm(){
 
     
 
-    if(password1!= password2){
+    if(password!= password2){
         errorMessages += "<p>The passwords need to match</p>";
     }
-    else if(password1.length > 7) {
+    else if(password.length > 7) {
         errorMessages += "<p>The password is required and cannot be greater than 7 characters</p>";
     }
-    else if (password1.toUpperCase() === password1) {
+    else if (password.toUpperCase() === password) {
         errorMessages +="<p>Your password needs a lower case letter</P>";
     }
-    else if (password1.toLowerCase() === password1) {
+    else if (password.toLowerCase() === password) {
         errorMessages += "<p>Your password needs an upper case letter</p>";
     }
-    else if (/\d/.test(password1) === false) {
+    else if (/\d/.test(password) === false) {
         errorMessages += "<p>Your password needs a number</p>";
         
     }
-    else if (/[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password1) === false) {
+    else if (/[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password) === false) {
         errorMessages += "<p>Your password needs a special character</p>";
         
     }
